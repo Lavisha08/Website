@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Achievements</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Achievements</h1>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="qualifications.html">Qualifications</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="gallery.html">Photo Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="achievement-section">
+      <h2>Awards</h2>
+      <ul>
+        <li>
+          <h3>Best Student of the Year</h3>
+          <p>University of XYZ</p>
+          <p>2021</p>
+        </li>
+        <li>
+          <h3>Web Design Competition Winner</h3>
+          <p>Web Design Association</p>
+          <p>2020</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="achievement-section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>
+          <h3>Certified Web Developer</h3>
+          <p>XYZ Certification Institute</p>
+          <p>2022</p>
+        </li>
+        <li>
+          <h3>Google Analytics Certification</h3>
+          <p>Google Academy</p>
+          <p>2021</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Personal Website</p>
+  </footer>
+</body>
+</html>

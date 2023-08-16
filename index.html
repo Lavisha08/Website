@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lavisha Andri Serrao</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+ 
+</head>
+<body>
+  <header class ="girly-header">
+    <h1>Coral</h1>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="qualifications.html">Qualifications</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="hobbies.html">Works</a></li>
+    
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2>Welcome to My Personal Website!</h2><br><h3>About me</h3>
+        <p>Hello, I'm Lavisha Andri Serrao. I am a 20 years old tech enthusiast studying in India. I am currently pursuing Engineering in computer science at SJEC. I am a very simple human with simple thoughts and desires with an urge to learn something more each day and be a little better than I was yesterday.I like to listen to people's stories.</p>
+        <p>Stay tuned for updates and new content!</p>
+      </div>
+      <div class="hero-image">
+        <img src="p311.jpg" alt="Profile Photo">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="counter-section">
+      <div id="visit-count"></div>
+      <div id="server-time"></div>
+    </div>
+    <p>&copy; 2023 Lavisha Andri Serrao</p>
+  </footer>
+  
+  
+  
+  <script>
+    // Retrieve the current visit count from local storage
+    let visitCount = localStorage.getItem('visitCount');
+  
+    // Check if visitCount exists in local storage
+    if (!visitCount) {
+      // Set initial visit count to 1 if it doesn't exist
+      visitCount = 1;
+    } else {
+      // Increment the visit count if it exists
+      visitCount = parseInt(visitCount) + 1;
+    }
+  
+    // Update the visit count in local storage
+    localStorage.setItem('visitCount', visitCount);
+  
+    // Display the visit count on the page
+    document.getElementById('visit-count').textContent = 'Page visits: ' + visitCount;
+  </script>
+
+
+
+  <script>
+  // Function to update the server time display
+  function updateServerTime() {
+  // Retrieve the current server time
+  var serverTime = new Date();
+
+  // Format the server time as a digital clock
+  var hours = serverTime.getHours().toString().padStart(2, '0');
+  var minutes = serverTime.getMinutes().toString().padStart(2, '0');
+  var seconds = serverTime.getSeconds().toString().padStart(2, '0');
+  var formattedTime = hours + ':' + minutes + ':' + seconds;
+
+  // Update the server time display on the page
+  document.getElementById('server-time').textContent = formattedTime;
+  }
+
+  // Call the updateServerTime() function initially to display the server time immediately
+  updateServerTime();
+
+  // Update the server time display every second (1000 milliseconds)
+  setInterval(updateServerTime, 1000);
+  </script>
+</body>
+</html>
